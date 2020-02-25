@@ -72,4 +72,7 @@ ro.setupwizard.mode=DISABLED
 # Maintainer
 ro.dot.maintainer=Darknius
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 #Kosongan
