@@ -133,11 +133,13 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.qti \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.2 \
-    android.hardware.power.stats@1.0-service.mock
+    android.hardware.power.stats@1.0-service.mock \
+    android.hardware.power-service.xiaomi-libperfmgr
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel
+    hardware/xiaomi
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
