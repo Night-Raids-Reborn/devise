@@ -180,6 +180,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     GmsTelecommOverlay \
     GmsTelephonyOverlay \
+    NotchBarKiller \
     SystemUIResCommon \
     TelecommResCommon \
     TelephonyResCommon \
