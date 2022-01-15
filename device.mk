@@ -79,6 +79,30 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
 
+# GBoard
+PRODUCT_PACKAGES += \
+    Gboard
+
+# ViaBrowser
+PRODUCT_PACKAGES += \
+    ViaBrowser
+
+# MiXplorer
+PRODUCT_PACKAGES += \
+    MiXplorer 
+
+# MiCalculator
+PRODUCT_PACKAGES += \
+    MiCalculator 
+
+# GoogleRecorder
+PRODUCT_PACKAGES += \
+    GoogleRecorder 
+
+# Google Photos
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
