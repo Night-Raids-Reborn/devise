@@ -127,7 +127,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.juice
-
+    
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
