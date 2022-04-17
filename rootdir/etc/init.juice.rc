@@ -28,6 +28,13 @@ on init
     write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so,libfb.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
+on boot
+# Force enable DT2W
+    chmod 0777 /sys
+    chmod 0755 /sys/touchpanel
+    chown system system /sys/touchpanel/double_tap
+    chmod 0600 /sys/touchpanel/double_tap
+
 on property:sys.boot_completed=1
     # Restrict permissions to socket file
     # to hide Magisk & co.
