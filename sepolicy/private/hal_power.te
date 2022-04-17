@@ -1,0 +1,3 @@
+# Allow hal_power_default to write to dt2w nodes
+allow hal_power sysfs_touchpanel:dir search;
+allow hal_power sysfs_touchpanel:file rw_file_perms;
