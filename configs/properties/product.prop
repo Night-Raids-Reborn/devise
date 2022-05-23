@@ -82,3 +82,6 @@ persist.sys.am.reschedule_service=true
 
 # Oem Unlock
 ro.oem_unlock_supported=0
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
