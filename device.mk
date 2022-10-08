@@ -75,25 +75,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
 
-# GBoard
+# Prebuilt APP
 PRODUCT_PACKAGES += \
-    Gboard
-
-# ViaBrowser
-PRODUCT_PACKAGES += \
-    ViaBrowser
-
-# MiXplorer
-PRODUCT_PACKAGES += \
-    MiXplorer 
-
-# MiCalculator
-PRODUCT_PACKAGES += \
-    MiCalculator 
-
-# GoogleRecorder
-PRODUCT_PACKAGES += \
-    GoogleRecorder
+    Gboard \
+    ViaBrowser \
+    MiXplorer \
+    MiCalculator \
+    GoogleRecorder 
 
 # Health
 PRODUCT_PACKAGES += \
