@@ -56,10 +56,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BluetoothQti
 
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
@@ -79,29 +75,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
 
-# GBoard
+# Prebuilt APP
 PRODUCT_PACKAGES += \
-    Gboard
-
-# ViaBrowser
-PRODUCT_PACKAGES += \
-    ViaBrowser
-
-# MiCalculator
-PRODUCT_PACKAGES += \
-    MiCalculator 
-
-# GoogleRecorder
-PRODUCT_PACKAGES += \
-    GoogleRecorder 
-
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
-
-# Hotword
-PRODUCT_PACKAGES += \
+    Gboard \
+    GoogleCameraGo \
+    ViaBrowser \
+    MiCalculator \
+    GoogleRecorder \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
 
@@ -110,6 +90,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hotword/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     $(LOCAL_PATH)/configs/hotword/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     $(LOCAL_PATH)/configs/hotword/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
 
 # Init
 PRODUCT_PACKAGES += \
