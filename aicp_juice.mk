@@ -27,7 +27,6 @@ DEVICE_MAINTAINERS="Darknius"
 
 # Fingerprint
 BUILD_FINGERPRINT := POCO/citrus_global/citrus:11/RKQ1.201004.002/V12.5.7.0.RJFMIXM:user/release-keys
-PRODUCT_OVERRIDE_GMS_FINGERPRINT := POCO/citrus_global/citrus:11/RKQ1.201004.002/V12.5.7.0.RJFMIXM:user/release-keys
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="citrus_global-user 11 RKQ1.201004.002 V12.5.7.0.RJFMIXM release-keys"
 
