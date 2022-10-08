@@ -79,7 +79,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gboard \
     ViaBrowser \
-    MiXplorer \
     MiCalculator \
     GoogleRecorder 
 
