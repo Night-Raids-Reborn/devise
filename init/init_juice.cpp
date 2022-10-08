@@ -72,8 +72,9 @@ void vendor_load_properties() {
         property_override(prop_name.c_str(), value.c_str(), false);
     };
     
-    property_override("ro.build.fingerprint", "POCO/citrus_eea/citrus:11/RKQ1.201004.002/V12.5.2.0.RJFEUXM:user/release-keys");
-    property_override("ro.build.description", "citrus_eea-user 11 RKQ1.201004.002 V12.5.2.0.RJFEUXM release-keys");
+    property_override("ro.build.fingerprint", "POCO/citrus_global/citrus:11/RKQ1.201004.002/V12.5.7.0.RJFMIXM:user/release-keys");
+    property_override("ro.build.description", "citrus_global-user 11 RKQ1.201004.002 V12.5.7.0.RJFMIXM release-keys");
+    property_override("ro.boot.verifiedbootstate", "green");
    
     std::string region = GetProperty("ro.boot.hwc", "");
     std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
