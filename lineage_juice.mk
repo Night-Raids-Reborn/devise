@@ -12,8 +12,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Gapps
-TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
+RICE_PACKAGE_TYPE := AOSP
+
+#bootanimation
+SUSHI_BOOTANIMATION := 1080
+
+# Graphene Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
 # Rice flags
 RICE_MAINTAINER := Darknius
@@ -25,7 +30,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Bloom and Living Universe Pixel Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Pixel Now playing feature
 TARGET_SUPPORTS_NOW_PLAYING := true
