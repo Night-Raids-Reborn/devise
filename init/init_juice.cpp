@@ -72,6 +72,17 @@ void vendor_load_properties() {
         property_override(prop_name.c_str(), value.c_str(), false);
     };
 
+    property_override("ro.build.fingerprint", "POCO/citrus_global/citrus:11/RKQ1.201004.002/V12.5.9.0.RJFMIXM:user/release-keys");
+    property_override("ro.build.description", "citrus_global-user 11 RKQ1.201004.002 V12.5.9.0.RJFMIXM release-keys");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");
+    property_override("vendor.boot.vbmeta.device_state", "locked");
+    property_override("ro.build.type", "user");
+    property_override("ro.debuggable", "0");
+    property_override("ro.secure", "1");
+    property_override("ro.build.tags", "release-keys");
+
     std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
     
     if (hwname == "lime") {
