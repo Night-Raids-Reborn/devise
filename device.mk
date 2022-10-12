@@ -87,10 +87,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ViaBrowser
 
-# MiXplorer
-PRODUCT_PACKAGES += \
-    MiXplorer 
-
 # MiCalculator
 PRODUCT_PACKAGES += \
     MiCalculator 
@@ -98,10 +94,6 @@ PRODUCT_PACKAGES += \
 # GoogleRecorder
 PRODUCT_PACKAGES += \
     GoogleRecorder 
-
-# Google Photos
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
 
 # Health
 PRODUCT_PACKAGES += \
@@ -114,10 +106,10 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/hotword/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
-    $(LOCAL_PATH)/hotword/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
-    $(LOCAL_PATH)/hotword/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    $(LOCAL_PATH)/hotword/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar
+    $(LOCAL_PATH)/configs/hotword/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
+    $(LOCAL_PATH)/configs/hotword/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    $(LOCAL_PATH)/configs/hotword/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    $(LOCAL_PATH)/configs/hotword/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar
 
 # Init
 PRODUCT_PACKAGES += \
