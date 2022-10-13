@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The fluidOS Project
+# Copyright (C) 2021 The cherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_juice.mk
+    $(LOCAL_DIR)/cherish_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_juice-user \
-    fluid_juice-userdebug \
-    fluid_juice-eng
+    cherish_juice-user \
+    cherish_juice-userdebug \
+    cherish_juice-eng
