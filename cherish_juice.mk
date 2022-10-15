@@ -7,8 +7,8 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common KaleidoskopOS stuff.
-$(call inherit-product, vendor/kscope/target/product/mobile.mk)
+# Inherit some common cherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Resolution of Bootanimation
@@ -38,8 +38,11 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 # Google Assistant
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Darknius
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := kscope_juice
+PRODUCT_NAME := cherish_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
