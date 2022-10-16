@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common cherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Resolution of Bootanimation
