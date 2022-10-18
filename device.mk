@@ -181,10 +181,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.qti \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.2
+    android.hardware.power@1.3.vendor \
+    android.hardware.power-service.juice-libperfmgr \
+    libqti-perfd-client
+
 
 # Radio
 PRODUCT_PACKAGES += \
