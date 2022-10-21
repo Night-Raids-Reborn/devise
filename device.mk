@@ -165,3 +165,7 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon
+#Powerhint File
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power/config/bengal/powerhint.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/powerhint.xml
+
