@@ -6,8 +6,10 @@
 
 DEVICE_PATH := device/xiaomi/juice
 
-# Broken R
+#Build
 BUILD_BROKEN_DUP_RULES := true
+SELINUX_IGNORE_NEVERALLOWS := true
+ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm64
