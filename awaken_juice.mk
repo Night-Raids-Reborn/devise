@@ -7,8 +7,8 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common KaleidoskopOS stuff.
-$(call inherit-product, vendor/awaken/target/product/mobile.mk)
+# Inherit some common awakenOS stuff.
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Resolution of Bootanimation
