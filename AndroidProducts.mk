@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The kscopeOS Project
+# Copyright (C) 2021 The awakenOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kscope_juice.mk
+    $(LOCAL_DIR)/awaken_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    kscope_juice-user \
-    kscope_juice-userdebug \
-    kscope_juice-eng
+    awaken_juice-user \
+    awaken_juice-userdebug \
+    awaken_juice-eng

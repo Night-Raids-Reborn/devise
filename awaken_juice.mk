@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common KaleidoskopOS stuff.
-$(call inherit-product, vendor/kscope/target/product/mobile.mk)
+$(call inherit-product, vendor/awaken/target/product/mobile.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Resolution of Bootanimation
@@ -39,7 +39,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := kscope_juice
+PRODUCT_NAME := awaken_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
