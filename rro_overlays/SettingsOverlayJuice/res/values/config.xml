@@ -33,5 +33,9 @@
   <!-- Battery health -->
   <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/bms/charge_full</string>
   <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/bms/charge_full_design</string>
+    
+  <!-- About device screen, build maintainer -->
+  <string name="build_maintainer_summary">Darknius</string>
+  <string name="build_maintainer_telegram">https://t.me/CC_CLANG</string>
 
 </resources>
