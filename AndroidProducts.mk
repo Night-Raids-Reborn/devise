@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The awakenOS Project
+# Copyright (C) 2021 The derpOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_juice.mk
+    $(LOCAL_DIR)/derp_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_juice-user \
-    awaken_juice-userdebug \
-    awaken_juice-eng
+    derp_juice-user \
+    derp_juice-userdebug \
+    derp_juice-eng

@@ -13,6 +13,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="awaken_maintainer">Darknius</string>
+    <string name="maintainer_name">Darknius</string>
+    <string name="maintainer_telegram">https://t.me/CC_CLANG</string>
 
 </resources> 
