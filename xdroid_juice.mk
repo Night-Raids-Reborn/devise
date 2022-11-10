@@ -7,12 +7,9 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common derpOS stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common xdroidOS stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
-
-# Resolution of Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
@@ -39,10 +36,16 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_juice
+PRODUCT_NAME := xdroid_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Xdroid Stuff
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := Darknius
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
