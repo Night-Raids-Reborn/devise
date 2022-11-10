@@ -7,8 +7,8 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common derpOS stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common NusantaraProject stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Resolution of Bootanimation
@@ -39,7 +39,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_juice
+PRODUCT_NAME := nad_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
