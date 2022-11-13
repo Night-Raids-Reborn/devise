@@ -117,11 +117,3 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/dirty_ratio 30
     write /proc/sys/vm/dirty_writeback_centisecs 3000
     write /proc/sys/vm/stat_interval 10
-
-service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
-    override
-    class main
-    user radio
-    socket ims_datad stream 0660 system radio
-    group radio wifi inet vendor_qti_diag log
-    disabled
