@@ -18,3 +18,10 @@
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?      u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/overlay(/.*)?    u:object_r:vendor_overlay_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/lib/modules(/.*)?   u:object_r:vendor_file:s0
+
+# Tweaking
+/sys/block/sd[a-e]/queue/iostats                               u:object_r:sysfs_devices_system_cpu:s0
+/sys/block/sd[a-e]/queue/nr_requests                           u:object_r:sysfs_devices_system_cpu:s0
+/sys/block/sd[a-e]/queue/read_ahead_kb                         u:object_r:sysfs_devices_system_cpu:s0
+/sys/module/workqueue/parameters/power_efficient               u:object_r:sysfs_devices_system_cpu:s0
+
