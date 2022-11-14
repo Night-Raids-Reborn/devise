@@ -6,16 +6,22 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common aicp stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+TARGET_SHIP_GCAM_GO := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aicp_juice
+PRODUCT_NAME := xtended_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
@@ -33,6 +39,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Darknius"
+# Xtended Stuffs
+XTENDED_BUILD_MAINTAINER := Darknius
+XTENDED_BUILD_TYPE := UNOFFICIAL
