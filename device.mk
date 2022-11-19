@@ -131,6 +131,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1 \
     vendor.qti.hardware.perf@2.2 \
     android.hardware.power.stats@1.0-service.mock
+    
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
