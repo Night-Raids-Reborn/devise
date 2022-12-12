@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The kscopeOS Project
+# Copyright (C) 2021 The sparkOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kscope_juice.mk
+    $(LOCAL_DIR)/spark_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    kscope_juice-user \
-    kscope_juice-userdebug \
-    kscope_juice-eng
+    spark_juice-user \
+    spark_juice-userdebug \
+    spark_juice-eng
