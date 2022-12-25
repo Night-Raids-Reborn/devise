@@ -86,14 +86,6 @@ ro.oem_unlock_supported=0
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true
 
-# PixelBlaster
-ro.pb.maintainer=Darknius
-ro.pb.soc=bengal
-ro.pb.camera=48MP
-ro.pb.version=3.5
-ro.pb.codename=juice
-ro.pb.device=Poco M3 / Redmi 9t
-
 # GO
 ro.lmk.filecache_min_kb=153600
 ro.lmk.stall_limit_critical=40
@@ -101,3 +93,5 @@ ro.lmk.use_minfree_levels=false
 ro.lmk.use_psi=true
 ro.config.low_ram=false
 ro.lmk.log_stats=false
+
+#Kosongan

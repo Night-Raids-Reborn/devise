@@ -68,3 +68,8 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # Disable setup wizard
 ro.setupwizard.mode=DISABLED
+
+# Maintainer
+ro.dot.maintainer=Darknius
+
+#Kosongan
