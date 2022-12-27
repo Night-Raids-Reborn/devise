@@ -198,8 +198,5 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
-# VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/juice/BoardConfigVendor.mk
