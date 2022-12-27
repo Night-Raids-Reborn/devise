@@ -96,10 +96,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
-# FP
-PRODUCT_SYSTEM_PROPERTIES += \
-    sys.fp.miui.token=0
-
 # Init
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
