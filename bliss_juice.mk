@@ -10,9 +10,9 @@ $(call inherit-product, device/xiaomi/juice/device.mk)
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
-BLISS_BUILD_VARIANT := vanilla
-BLISS_BUILDTYPE=UNOFFICIAL
-TARGET_WANTS_FOD_ANIMATIONS=false
+BLISS_BUILD_VARIANT := gapps
+BLISS_BUILDTYPE := UNOFFICIAL
+TARGET_WANTS_FOD_ANIMATIONS := false
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
