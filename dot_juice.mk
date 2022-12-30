@@ -10,6 +10,7 @@ $(call inherit-product, device/xiaomi/juice/device.mk)
 $(call inherit-product, vendor/dot/config/common.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
+USE_LAWNCHAIR := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
