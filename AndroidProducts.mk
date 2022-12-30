@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The dotOS Project
+# Copyright (C) 2021 The blissOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_juice.mk
+    $(LOCAL_DIR)/bliss_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_juice-user \
-    dot_juice-userdebug \
-    dot_juice-eng
+    bliss_juice-user \
+    bliss_juice-userdebug \
+    bliss_juice-eng
