@@ -94,4 +94,28 @@ ro.lmk.use_psi=true
 ro.config.low_ram=false
 ro.lmk.log_stats=false
 
+###BAIKAL OS###
+# Baikal Maintainer
+ro.baikalos.maintainer=Darknius
+
+# BaikalService 
+baikal.eng.perf=1
+baikal.eng.therm=1
+baikal.eng.perf.edit=1
+persist.baikal.boost_en=10
+
+# Baikal Effects
+persist.baikal.ae.disable=0
+persist.baikal.qcae.disable=0
+persist.baikal.dolby.enable=0
+persist.baikal.fps.default=6
+sys.baikal.dolby.avail=0
+sys.baikal.viper.avail=1
+sys.baikal.qcae.avail=0
+sys.baikal.reader=0
+sys.baikal.var_fps=1
+sys.baikal.lowres=1
+sys.baikal.lowres_dens=280
+sys.baikal.lowres_size=720x1600
+
 #Kosongan

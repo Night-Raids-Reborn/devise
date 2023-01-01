@@ -1,0 +1,30 @@
+on property:persist.baikal.dolby.enable=1
+    #enable dms-hal-1-0
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal.dolby.enable=0
+    #stop dms-hal-1-0
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal.viper.enable=1
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal.viper.enable=0
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal.viper.force=1
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal.viper.force=0
+    setprop sys.audio.restart.hal 1
+    
+on property:persist.baikal.ae.disable=0
+    setprop ro.audio.ignore_effects 0
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal.ae.disable=1
+    #setprop ro.audio.ignore_effects 1 - not needed with OSS vendor anymore
+    setprop sys.audio.restart.hal 1
+
+on property:persist.baikal_audio_hq=*
+    setprop sys.audio.restart.hal 1

@@ -6,20 +6,20 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common dot stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common baikalos stuff.
+$(call inherit-product, vendor/baikalos/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 USE_LAWNCHAIR := true
-
+DEVICE_MAINTAINER := Darknius
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_juice
+PRODUCT_NAME := baikalos_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
