@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common dot stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
@@ -19,7 +19,7 @@ USE_LAWNCHAIR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_juice
+PRODUCT_NAME := revengeos_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
