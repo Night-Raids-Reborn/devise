@@ -7,19 +7,22 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 USE_LAWNCHAIR := true
+BLISS_BUILD_VARIANT := gapps
+BLISS_BUILDTYPE := UNOFFICIAL
+TARGET_WANTS_FOD_ANIMATIONS := false
 
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := fluid_juice
+PRODUCT_NAME := bliss_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
@@ -37,8 +40,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
 
-# Fluid flags
-FLUID_BUILD_TYPE := UNOFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-	ro.fluid.maintainer=Darknius \
-	ro.fluid.cpu=BENGAL
