@@ -13,6 +13,11 @@ TARGET_GAPPS_ARCH := arm64
 USE_LAWNCHAIR := true
 WITH_GAPPS := true
 
+#Opengapps option
+GAPPS_VARIANT := nano
+GAPPS_PRODUCT_PACKAGES += Chrome Maps ClockGoogle CalendarGoogle AndroidAuto DialerGoogle ContactsGoogle PlayGames Keep Drive Photos Messenger
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
