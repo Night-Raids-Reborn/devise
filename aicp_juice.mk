@@ -6,23 +6,18 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common dot stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common aicp stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 USE_LAWNCHAIR := true
 WITH_GAPPS := true
 
-#Opengapps option
-GAPPS_VARIANT := nano
-GAPPS_PRODUCT_PACKAGES += Chrome Maps ClockGoogle CalendarGoogle AndroidAuto DialerGoogle ContactsGoogle PlayGames Keep Drive Photos Messenger
-GAPPS_FORCE_PACKAGE_OVERRIDES := true
-
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_juice
+PRODUCT_NAME := aicp_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
@@ -33,6 +28,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Fingerprint
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
 BUILD_DESCRIPTION := redfin-user 11 RQ3A.210905.001 7511028 release-keys
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+DEVICE_MAINTAINERS="Darknius"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
