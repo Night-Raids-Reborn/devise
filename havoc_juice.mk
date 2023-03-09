@@ -7,7 +7,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common dot stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 USE_LAWNCHAIR := true
@@ -17,7 +17,7 @@ WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_juice
+PRODUCT_NAME := havoc_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115

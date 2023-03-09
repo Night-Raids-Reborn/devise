@@ -69,7 +69,10 @@ persist.vendor.ims.disableQXDMLogs=1
 # Disable setup wizard
 ro.setupwizard.mode=DISABLED
 
-# Maintainer
-ro.dot.maintainer=Darknius
+# Havoc Specific props
+ro.havoc.group.url=https://t.me/cemnel
+ro.havoc.maintainer=Darknius
+ro.havoc.maintainer.username=CC_CLANG
+ro.havoc.device.name=Poco M3 / Redmi 9t
 
 #Kosongan
