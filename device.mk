@@ -84,7 +84,6 @@ PRODUCT_PACKAGES += \
     Gboard \
     GoogleCameraGo \
     ViaBrowser \
-    MiCalculator \
     GoogleRecorder \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
