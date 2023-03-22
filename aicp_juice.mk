@@ -11,7 +11,6 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 USE_LAWNCHAIR := true
-WITH_GAPPS := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
