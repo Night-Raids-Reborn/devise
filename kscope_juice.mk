@@ -20,6 +20,9 @@ WITH_GMS := true
 WITH_GAPPS := true
 USE_GAPPS := true
 
+#Lawnchair
+USE_LAWNCHAIR := true
+
 # Quick tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
