@@ -81,10 +81,8 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt APP
 PRODUCT_PACKAGES += \
-    Gboard \
     GoogleCameraGo \
     ViaBrowser \
-    MiCalculator \
     GoogleRecorder \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON
