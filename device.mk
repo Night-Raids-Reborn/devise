@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt APP
 PRODUCT_PACKAGES += \
-    GoogleCameraGo \
+    GcamGo \
     ViaBrowser \
     GoogleRecorder \
     HotwordEnrollmentOKGoogleHEXAGON \
