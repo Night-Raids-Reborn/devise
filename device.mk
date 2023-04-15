@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    GcamGo
 
 # Display
 PRODUCT_PACKAGES += \
