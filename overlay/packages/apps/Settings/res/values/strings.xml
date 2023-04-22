@@ -10,6 +10,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<string name="bliss_maintainer">Darknius</string>
+
+   <!-- Maintainer -->
+   <string name="maintainer_name">Darknius</string>
+
+   <!-- Maintainer's Telegram username -->
+   <string name="maintainer_telegram_username">https://t.me/CC_CLANG</string>
 
 </resources>

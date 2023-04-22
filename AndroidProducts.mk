@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The bliss Project
+# Copyright (C) 2021 The aosp Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_juice.mk
+    $(LOCAL_DIR)/aosp_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_juice-user \
-    bliss_juice-userdebug \
-    bliss_juice-eng
+    aosp_juice-user \
+    aosp_juice-userdebug \
+    aosp_juice-eng
