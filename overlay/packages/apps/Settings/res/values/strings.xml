@@ -11,5 +11,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 <string name="bliss_maintainer">Darknius</string>
+<string name="blaster_maintainer">Darknius</string>
 
 </resources>
