@@ -12,5 +12,7 @@
 
 <string name="bliss_maintainer">Darknius</string>
 <string name="blaster_maintainer">Darknius</string>
+<string name="maintainer_name">Darknius</string>
+NAD_BUILD_TYPE ?= UNOFFICIAL
 
 </resources>
