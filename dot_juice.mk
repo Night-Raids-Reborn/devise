@@ -11,7 +11,7 @@ $(call inherit-product, vendor/dot/config/common.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+ 
 USE_LAWNCHAIR := true
 
 

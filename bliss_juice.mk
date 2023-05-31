@@ -11,7 +11,7 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+ 
 USE_LAWNCHAIR := true
 BLISS_BUILD_VARIANT := gapps
 BLISS_BUILDTYPE := UNOFFICIAL
