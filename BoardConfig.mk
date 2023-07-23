@@ -166,8 +166,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
-BOARD_USES_QCOM_HARDWARE := true
-OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
