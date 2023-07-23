@@ -12,7 +12,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/spark_juice.mk \
     $(LOCAL_DIR)/aicp_juice.mk \
     $(LOCAL_DIR)/dot_juice.mk \
-    $(LOCAL_DIR)/nad_juice.mk
+    $(LOCAL_DIR)/nad_juice.mk \
+    $(LOCAL_DIR)/havoc_juice.mk
 
 COMMON_LUNCH_CHOICES := \
     bliss_juice-user \
@@ -38,5 +39,8 @@ COMMON_LUNCH_CHOICES := \
     dot_juice-eng \
     nad_juice-user \
     nad_juice-userdebug \
-    nad_juice-eng
+    nad_juice-eng \
+    havoc_juice-user \
+    havoc_juice-userdebug \
+    havoc_juice-eng
     
