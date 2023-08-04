@@ -22,7 +22,11 @@ $(call inherit-product, vendor/xiaomi/juice/juice-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
+    vendor/qcom/opensource/commonsys/system/bt/conf \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi
+
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 BOARD_BUILD_PRODUCT_IMAGE := true
@@ -102,7 +106,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.target.rc \
-    init.juice.rc
+    init.juice.rc \
+    init.qcom.power.rc
 
 
 # Input
@@ -137,7 +142,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.juice \
+    android.hardware.power-service.juice-libperfmgr \
     android.hardware.power.stats@1.0-service.mock
 
 # Properties

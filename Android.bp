@@ -2,5 +2,8 @@ soong_namespace {
     imports: [
        "vendor/qcom/opensource/commonsys/packages/apps/Bluetooth",
        "vendor/qcom/opensource/commonsys/system/bt/conf"
+       "hardware/google/interfaces",
+       "hardware/google/pixel",
+       "hardware/xiaomi",
     ],
 }
