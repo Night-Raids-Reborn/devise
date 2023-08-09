@@ -20,10 +20,10 @@
 #include <memory>
 #include <thread>
 
-#include <aidl/google/hardware/power/extension/pixel/BnPowerExt.h>
+#include <aidl/android/hardware/power/BnPower.h>
 #include <perfmgr/HintManager.h>
 
-#include "disp-power/DisplayLowPower.h"
+#include "InteractionHandler.h"
 
 namespace aidl {
 namespace google {
@@ -32,20 +32,24 @@ namespace power {
 namespace impl {
 namespace pixel {
 
+using ::InteractionHandler;
+using ::aidl::android::hardware::power::Boost;
+using ::aidl::android::hardware::power::Mode;
 using ::android::perfmgr::HintManager;
 
-class PowerExt : public ::aidl::google::hardware::power::extension::pixel::BnPowerExt {
+class Power : public ::aidl::android::hardware::power::BnPower {
   public:
-    PowerExt(std::shared_ptr<HintManager> hm, std::shared_ptr<DisplayLowPower> dlpw)
-        : mHintManager(hm), mDisplayLowPower(dlpw) {}
-    ndk::ScopedAStatus setMode(const std::string &mode, bool enabled) override;
-    ndk::ScopedAStatus isModeSupported(const std::string &mode, bool *_aidl_return) override;
-    ndk::ScopedAStatus setBoost(const std::string &boost, int32_t durationMs) override;
-    ndk::ScopedAStatus isBoostSupported(const std::string &boost, bool *_aidl_return) override;
+    Power(std::shared_ptr<HintManager> hm);
+    ndk::ScopedAStatus setMode(Mode type, bool enabled) override;
+    ndk::ScopedAStatus isModeSupported(Mode type, bool *_aidl_return) override;
+    ndk::ScopedAStatus setBoost(Boost type, int32_t durationMs) override;
+    ndk::ScopedAStatus isBoostSupported(Boost type, bool *_aidl_return) override;
+    binder_status_t dump(int fd, const char **args, uint32_t numArgs) override;
 
   private:
     std::shared_ptr<HintManager> mHintManager;
-    std::shared_ptr<DisplayLowPower> mDisplayLowPower;
+    std::unique_ptr<InteractionHandler> mInteractionHandler;
+    std::atomic<bool> mSustainedPerfModeOn;
 };
 
 }  // namespace pixel
