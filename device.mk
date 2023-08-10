@@ -24,9 +24,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf \
     hardware/google/interfaces \
-    hardware/google/pixel \
-    hardware/xiaomi
-
+    hardware/google/pixel
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 BOARD_BUILD_PRODUCT_IMAGE := true
