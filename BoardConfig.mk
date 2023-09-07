@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/juice
+DEVICE_PATH := device/xiaomi/citrus
 
 #Build
 BUILD_BROKEN_DUP_RULES := true
@@ -35,7 +35,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
+TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,citrus
 
 # Audio
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
@@ -72,8 +72,8 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_juice
-TARGET_RECOVERY_DEVICE_MODULES := libinit_juice
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_citrus
+TARGET_RECOVERY_DEVICE_MODULES := libinit_citrus
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -100,8 +100,8 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
-TARGET_KERNEL_SOURCE := kernel/xiaomi/juice
+TARGET_KERNEL_HEADERS := kernel/xiaomi/citrus
+TARGET_KERNEL_SOURCE := kernel/xiaomi/citrus
 TARGET_KERNEL_CONFIG := guuji_defconfig
 
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -199,4 +199,4 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
 # Inherit from the proprietary version
--include vendor/xiaomi/juice/BoardConfigVendor.mk
+-include vendor/xiaomi/citrus/BoardConfigVendor.mk

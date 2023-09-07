@@ -4,21 +4,23 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/xiaomi/juice/device.mk)
+$(call inherit-product, device/xiaomi/citrus/device.mk)
 
-# Inherit some common aicp stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 USE_LAWNCHAIR := true
-AICP_BUILDTYPE := HOMEMADE
+
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aicp_juice
-PRODUCT_DEVICE := juice
+PRODUCT_NAME := revengeos_citrus
+PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
@@ -28,10 +30,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Fingerprint
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
 BUILD_DESCRIPTION := redfin-user 11 RQ3A.210905.001 7511028 release-keys
-
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Darknius"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)

@@ -1,4 +1,4 @@
-Unified (codename: juice) Android 11 device tree for Redmi 9T / Redmi 9 Power / Redmi Note 9 4G / POCO M3.
+Unified (codename: citrus) Android 11 device tree for Redmi 9T / Redmi 9 Power / Redmi Note 9 4G / POCO M3.
 
 # Device specifications
 

@@ -5,46 +5,46 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_juice.mk \
-    $(LOCAL_DIR)/fluid_juice.mk \
-    $(LOCAL_DIR)/revengeos_juice.mk \
-    $(LOCAL_DIR)/aosp_juice.mk \
-    $(LOCAL_DIR)/spark_juice.mk \
-    $(LOCAL_DIR)/aicp_juice.mk \
-    $(LOCAL_DIR)/dot_juice.mk \
-    $(LOCAL_DIR)/nad_juice.mk \
-    $(LOCAL_DIR)/havoc_juice.mk \
-    $(LOCAL_DIR)/lineage_juice.mk
+    $(LOCAL_DIR)/bliss_citrus.mk \
+    $(LOCAL_DIR)/fluid_citrus.mk \
+    $(LOCAL_DIR)/revengeos_citrus.mk \
+    $(LOCAL_DIR)/aosp_citrus.mk \
+    $(LOCAL_DIR)/spark_citrus.mk \
+    $(LOCAL_DIR)/aicp_citrus.mk \
+    $(LOCAL_DIR)/dot_citrus.mk \
+    $(LOCAL_DIR)/nad_citrus.mk \
+    $(LOCAL_DIR)/havoc_citrus.mk \
+    $(LOCAL_DIR)/lineage_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_juice-user \
-    bliss_juice-userdebug \
-    bliss_juice-eng \
-    fluid_juice-user \
-    fluid_juice-userdebug \
-    fluid_juice-eng \
-    revengeos_juice-user \
-    revengeos_juice-userdebug \
-    revengeos_juice-eng \
-    aosp_juice-user \
-    aosp_juice-userdebug \
-    aosp_juice-eng \
-    spark_juice-user \
-    spark_juice-userdebug \
-    spark_juice-eng \
-    aicp_juice-user \
-    aicp_juice-userdebug \
-    aicp_juice-eng \
-    dot_juice-user \
-    dot_juice-userdebug \
-    dot_juice-eng \
-    nad_juice-user \
-    nad_juice-userdebug \
-    nad_juice-eng \
-    havoc_juice-user \
-    havoc_juice-userdebug \
-    havoc_juice-eng \
-    lineage_juice-user \
-    lineage_juice-userdebug \
-    lineage_juice-eng
+    bliss_citrus-user \
+    bliss_citrus-userdebug \
+    bliss_citrus-eng \
+    fluid_citrus-user \
+    fluid_citrus-userdebug \
+    fluid_citrus-eng \
+    revengeos_citrus-user \
+    revengeos_citrus-userdebug \
+    revengeos_citrus-eng \
+    aosp_citrus-user \
+    aosp_citrus-userdebug \
+    aosp_citrus-eng \
+    spark_citrus-user \
+    spark_citrus-userdebug \
+    spark_citrus-eng \
+    aicp_citrus-user \
+    aicp_citrus-userdebug \
+    aicp_citrus-eng \
+    dot_citrus-user \
+    dot_citrus-userdebug \
+    dot_citrus-eng \
+    nad_citrus-user \
+    nad_citrus-userdebug \
+    nad_citrus-eng \
+    havoc_citrus-user \
+    havoc_citrus-userdebug \
+    havoc_citrus-eng \
+    lineage_citrus-user \
+    lineage_citrus-userdebug \
+    lineage_citrus-eng
     

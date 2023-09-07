@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit from vendor
-$(call inherit-product, vendor/xiaomi/juice/juice-vendor.mk)
+$(call inherit-product, vendor/xiaomi/citrus/citrus-vendor.mk)
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.target.rc \
-    init.juice.rc \
+    init.citrus.rc
 
 
 # Input
@@ -120,7 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_juice
+    android.hardware.light@2.0-service.xiaomi_citrus
 
 # Launcher
 PRODUCT_PACKAGES += \
