@@ -13,7 +13,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aicp_juice.mk \
     $(LOCAL_DIR)/dot_juice.mk \
     $(LOCAL_DIR)/nad_juice.mk \
-    $(LOCAL_DIR)/havoc_juice.mk
+    $(LOCAL_DIR)/havoc_juice.mk \
+    $(LOCAL_DIR)/lineage_juice.mk
 
 COMMON_LUNCH_CHOICES := \
     bliss_juice-user \
@@ -42,5 +43,8 @@ COMMON_LUNCH_CHOICES := \
     nad_juice-eng \
     havoc_juice-user \
     havoc_juice-userdebug \
-    havoc_juice-eng
+    havoc_juice-eng \
+    lineage_juice-user \
+    lineage_juice-userdebug \
+    lineage_juice-eng
     
