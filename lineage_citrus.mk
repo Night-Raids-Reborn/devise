@@ -11,8 +11,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
-USE_GAPPS := true
 USE_LAWNCHAIR := true
 
 # Bootanimation
