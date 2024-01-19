@@ -14,7 +14,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/dot_citrus.mk \
     $(LOCAL_DIR)/nad_citrus.mk \
     $(LOCAL_DIR)/havoc_citrus.mk \
-    $(LOCAL_DIR)/lineage_citrus.mk
+    $(LOCAL_DIR)/lineage_citrus.mk \
+    $(LOCAL_DIR)/kscope_citrus.mk
 
 COMMON_LUNCH_CHOICES := \
     bliss_citrus-user \
@@ -46,5 +47,8 @@ COMMON_LUNCH_CHOICES := \
     havoc_citrus-eng \
     lineage_citrus-user \
     lineage_citrus-userdebug \
-    lineage_citrus-eng
+    lineage_citrus-eng \
+    kscope_citrus-user \
+    kscope_citrus-userdebug \
+    kscope_citrus-eng
     
