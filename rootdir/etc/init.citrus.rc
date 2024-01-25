@@ -17,13 +17,3 @@ on property:sys.boot_completed=1
     write /dev/cpuset/restricted/cpus 2-5
     write /dev/cpuset/system-background/cpus 2-4
     write /dev/cpuset/top-app/cpus 0-7
-    # SWAP 4GB RAM
-    swapoff /dev/block/zram0
-    echo "1" > /sys/block/zram0/reset
-    echo "0" > /sys/block/zram0/disksize
-    echo "8" > /sys/block/zram0/max_comp_streams
-    chmod 644 /sys/block/zram0/disksize
-    echo '4294967296' > /sys/block/zram0/disksize
-    chmod 444 /sys/block/zram0/disksize
-    mkswap /dev/block/zram0 > /dev/null 2>&1
-    swapon /dev/block/zram0 > /dev/null 2>&1
